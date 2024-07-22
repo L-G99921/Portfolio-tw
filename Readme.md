@@ -38,15 +38,6 @@ Detailed project description...
 ## GitHub and Documentation Repositories
 - [GitHub Profile](https://github.com/L-G99921)
 
-## UX Writing Samples
-- Example of UX writing for a mobile app...
-
-## Interactive Documentation
-- Example of interactive API documentation using Swagger...
-
-## Personal Projects
-- Open-source project documentation for ABC Tool...
-
 ## Language Proficiency
 - Fluent in English and Portuguese
 
