@@ -83,5 +83,3 @@ Proven success collaborating with Engineering, Product, and Security teams to de
 - English: Fluent
 - Spanish: Intermediate
 
-## GitHub and Documentation Repositories
-- [GitHub Profile](https://github.com/L-G99921)
