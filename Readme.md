@@ -58,10 +58,10 @@ Proven success collaborating with Engineering, Product, and Security teams to de
 - [Training Material Design Guide](./documentations/training_material_design_guide.md)
 
 ## Metrics and Achievements
-• Reduced rework by 75% and accelerated onboarding by 40% through modular documentation
-• Increased developer documentation satisfaction scores from 3.8 → 4.6/5 in six months
-• Reduced recurring support tickets by 25-30% across multiple organizations
-• Implemented AI-driven workflows improving documentation consistency and accuracy
+- Reduced rework by 75% and accelerated onboarding by 40% through modular documentation
+- Increased developer documentation satisfaction scores from 3.8 → 4.6/5 in six months
+- Reduced recurring support tickets by 25-30% across multiple organizations
+- Implemented AI-driven workflows improving documentation consistency and accuracy
 
 ## Blog and Publications
 - [Technical Writing Best Practices](./Blog_&_publi/tw_best_practices.md)
