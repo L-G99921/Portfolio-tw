@@ -4,7 +4,6 @@ This framework outlines a comprehensive approach to designing, implementing, and
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Architecture principles](#architecture-principles)
 - [Framework components](#framework-components)
   - [Information architecture layer](#information-architecture-layer)
@@ -14,8 +13,6 @@ This framework outlines a comprehensive approach to designing, implementing, and
 - [Success measurements](#success-measurements)
 - [Risk management and mitigation](#risk-management-and-mitigation)
 - [Conclusion](#conclusion)
-
-## Overview
 
 ## Architecture principles
 

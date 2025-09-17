@@ -4,7 +4,6 @@ As technical writing evolves in the AI era, leveraging AI agents like Claude Cod
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [My AI agent expertise](#my-ai-agent-expertise)
   - [Core competencies](#core-competencies)
   - [Practical applications](#practical-applications)
@@ -14,8 +13,6 @@ As technical writing evolves in the AI era, leveraging AI agents like Claude Cod
 - [Future applications and innovation](#future-applications-and-innovation)
 - [Professional development in AI](#professional-development-in-ai)
 - [Conclusion](#conclusion)
-
-## Overview
 
 ## My AI agent expertise
 

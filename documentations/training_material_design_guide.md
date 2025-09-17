@@ -4,7 +4,6 @@ This comprehensive guide outlines best practices for designing, developing, and 
 
 ## Table of Contents
 
-- [Overview](#overview)
 - [Learning design principles](#learning-design-principles)
 - [Training material framework](#training-material-framework)
   - [Content architecture](#content-architecture)
@@ -17,9 +16,7 @@ This comprehensive guide outlines best practices for designing, developing, and 
 - [Continuous improvement framework](#continuous-improvement-framework)
 - [Conclusion](#conclusion)
 
-## Overview
-
-## Learning Design Principles
+## Learning design principles
 
 ### 1. **Adult Learning Theory (Andragogy)**
 - **Self-Directed Learning:** Provide learners with autonomy and control over their learning path
