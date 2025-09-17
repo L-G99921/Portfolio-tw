@@ -1,8 +1,23 @@
 # Training Material Design Guide
 
-## Overview
-
 This comprehensive guide outlines best practices for designing, developing, and delivering effective training materials for enterprise software and technical products. Based on instructional design principles and adult learning theory, this framework ensures training content maximizes knowledge retention, skill development, and user adoption.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Learning design principles](#learning-design-principles)
+- [Training material framework](#training-material-framework)
+  - [Content architecture](#content-architecture)
+  - [Learning experience design](#learning-experience-design)
+- [Content development process](#content-development-process)
+- [Assessment and evaluation framework](#assessment-and-evaluation-framework)
+- [Technology and tools integration](#technology-and-tools-integration)
+- [Implementation strategy](#implementation-strategy)
+- [Success metrics and KPIs](#success-metrics-and-kpis)
+- [Continuous improvement framework](#continuous-improvement-framework)
+- [Conclusion](#conclusion)
+
+## Overview
 
 ## Learning Design Principles
 

@@ -1,46 +1,50 @@
 # RESTful API Documentation
 
-Welcome to the RESTful API documentation! This document provides details on how to interact with the API, including endpoints, supported HTTP methods, parameters, and response examples.
+This documentation provides comprehensive details for interacting with our RESTful API, including endpoints, HTTP methods, parameters, and response examples.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Authentication](#authentication)
 - [Endpoints](#endpoints)
   - [Users](#users)
-    - [Get Users](#get-users)
-    - [Create User](#create-user)
-    - [Get User by ID](#get-user-by-id)
-    - [Update User](#update-user)
-    - [Delete User](#delete-user)
+    - [Get users](#get-users)
+    - [Create user](#create-user)
+    - [Get user by ID](#get-user-by-id)
+    - [Update user](#update-user)
+    - [Delete user](#delete-user)
   - [Projects](#projects)
-    - [Get Projects](#get-projects)
-    - [Create Project](#create-project)
-    - [Get Project by ID](#get-project-by-id)
-    - [Update Project](#update-project)
-    - [Delete Project](#delete-project)
-- [Common Errors](#common-errors)
-- [Additional Resources](#additional-resources)
+    - [Get projects](#get-projects)
+    - [Create project](#create-project)
+    - [Get project by ID](#get-project-by-id)
+    - [Update project](#update-project)
+    - [Delete project](#delete-project)
+- [Error handling](#error-handling)
+- [Additional resources](#additional-resources)
 
 ## Introduction
-This RESTful API allows managing users and projects in a project management application. The API follows REST standards, using HTTP methods for CRUD (Create, Read, Update, Delete) operations.
+
+Our RESTful API enables you to manage users and projects in a comprehensive project management application. The API follows REST standards and uses standard HTTP methods for CRUD (Create, Read, Update, Delete) operations.
 
 ## Authentication
-To use the API, you need to authenticate using JWT (JSON Web Tokens).
 
-> ℹ️ **Note:** Include the authentication token in the header of each request:
-> ```
-> Authorization: Bearer <your-jwt-token>
-> ```
+To use this API, authenticate by using JWT (JSON Web Tokens).
+
+**Important**: Include the authentication token in the header of each request:
+
+```http
+Authorization: Bearer <your-jwt-token>
+```
 
 ## Endpoints
 
 ### Users
 
-#### Get Users
-- **Endpoint:** `/api/users`
-- **Method:** `GET`
-- **Description:** Returns a list of all users.
-- **Successful Response:**
+#### Get users
+- **Endpoint**: `/api/users`
+- **Method**: `GET`
+- **Description**: Returns a list of all users.
+- **Successful response**:
   ```json
   [
     {
@@ -56,11 +60,11 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   ]
   ```
 
-#### Create User
-- **Endpoint:** `/api/users`
-- **Method:** `POST`
-- **Description:** Creates a new user.
-- **Request Body:**
+#### Create user
+- **Endpoint**: `/api/users`
+- **Method**: `POST`
+- **Description**: Creates a new user.
+- **Request body**:
   ```json
   {
     "name": "João Silva",
@@ -68,7 +72,7 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
     "password": "password123"
   }
   ```
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "id": 1,
@@ -77,13 +81,13 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-#### Get User by ID
-- **Endpoint:** `/api/users/{id}`
-- **Method:** `GET`
-- **Description:** Returns details of a specific user.
-- **URL Parameters:**
+#### Get user by ID
+- **Endpoint**: `/api/users/{id}`
+- **Method**: `GET`
+- **Description**: Returns details of a specific user.
+- **URL parameters**:
   - `id` (required): User ID
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "id": 1,
@@ -92,13 +96,13 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-#### Update User
-- **Endpoint:** `/api/users/{id}`
-- **Method:** `PUT`
-- **Description:** Updates the information of a specific user.
-- **URL Parameters:**
+#### Update user
+- **Endpoint**: `/api/users/{id}`
+- **Method**: `PUT`
+- **Description**: Updates the information of a specific user.
+- **URL parameters**:
   - `id` (required): User ID
-- **Request Body:**
+- **Request body**:
   ```json
   {
     "name": "João Silva",
@@ -106,7 +110,7 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
     "password": "newPassword123"
   }
   ```
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "id": 1,
@@ -115,13 +119,13 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-#### Delete User
-- **Endpoint:** `/api/users/{id}`
-- **Method:** `DELETE`
-- **Description:** Deletes a specific user.
-- **URL Parameters:**
+#### Delete user
+- **Endpoint**: `/api/users/{id}`
+- **Method**: `DELETE`
+- **Description**: Deletes a specific user.
+- **URL parameters**:
   - `id` (required): User ID
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "message": "User successfully deleted"
@@ -130,11 +134,11 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
 
 ### Projects
 
-#### Get Projects
-- **Endpoint:** `/api/projects`
-- **Method:** `GET`
-- **Description:** Returns a list of all projects.
-- **Successful Response:**
+#### Get projects
+- **Endpoint**: `/api/projects`
+- **Method**: `GET`
+- **Description**: Returns a list of all projects.
+- **Successful response**:
   ```json
   [
     {
@@ -150,33 +154,18 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   ]
   ```
 
-#### Create Project
-- **Endpoint:** `/api/projects`
-- **Method:** `POST`
-- **Description:** Creates a new project.
-- **Request Body:**
+#### Create project
+- **Endpoint**: `/api/projects`
+- **Method**: `POST`
+- **Description**: Creates a new project.
+- **Request body**:
   ```json
   {
     "name": "Project A",
     "description": "Description of Project A"
   }
   ```
-- **Successful Response:**
-  ```json
-  {
-    "id": 1,
-    "name": "Project A",
-    "description": "Description of Project A"
-  }
-  ```
-
-#### Get Project by ID
-- **Endpoint:** `/api/projects/{id}`
-- **Method:** `GET`
-- **Description:** Returns details of a specific project.
-- **URL Parameters:**
-  - `id` (required): Project ID
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "id": 1,
@@ -185,20 +174,35 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-#### Update Project
-- **Endpoint:** `/api/projects/{id}`
-- **Method:** `PUT`
-- **Description:** Updates the information of a specific project.
-- **URL Parameters:**
+#### Get project by ID
+- **Endpoint**: `/api/projects/{id}`
+- **Method**: `GET`
+- **Description**: Returns details of a specific project.
+- **URL parameters**:
   - `id` (required): Project ID
-- **Request Body:**
+- **Successful response**:
+  ```json
+  {
+    "id": 1,
+    "name": "Project A",
+    "description": "Description of Project A"
+  }
+  ```
+
+#### Update project
+- **Endpoint**: `/api/projects/{id}`
+- **Method**: `PUT`
+- **Description**: Updates the information of a specific project.
+- **URL parameters**:
+  - `id` (required): Project ID
+- **Request body**:
   ```json
   {
     "name": "Project A",
     "description": "Updated description of Project A"
   }
   ```
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "id": 1,
@@ -207,23 +211,23 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-#### Delete Project
-- **Endpoint:** `/api/projects/{id}`
-- **Method:** `DELETE`
-- **Description:** Deletes a specific project.
-- **URL Parameters:**
+#### Delete project
+- **Endpoint**: `/api/projects/{id}`
+- **Method**: `DELETE`
+- **Description**: Deletes a specific project.
+- **URL parameters**:
   - `id` (required): Project ID
-- **Successful Response:**
+- **Successful response**:
   ```json
   {
     "message": "Project successfully deleted"
   }
   ```
 
-## Common Errors
+## Error handling
 
 ### 400 Bad Request
-- **Description:** The request contains invalid parameters or is malformed.
+- **Description**: The request contains invalid parameters or is malformed.
 - **Response Example:**
   ```json
   {
@@ -232,7 +236,7 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   ```
 
 ### 401 Unauthorized
-- **Description:** The request does not contain a valid authentication token.
+- **Description**: The request doesn't contain a valid authentication token.
 - **Response Example:**
   ```json
   {
@@ -241,7 +245,7 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   ```
 
 ### 404 Not Found
-- **Description:** The requested resource was not found.
+- **Description**: The requested resource wasn't found.
 - **Response Example:**
   ```json
   {
@@ -250,7 +254,7 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   ```
 
 ### 500 Internal Server Error
-- **Description:** An error occurred on the server.
+- **Description**: An error occurred on the server.
 - **Response Example:**
   ```json
   {
@@ -258,13 +262,13 @@ To use the API, you need to authenticate using JWT (JSON Web Tokens).
   }
   ```
 
-## Additional Resources
+## Additional resources
 - [Authentication Guide](#)
 - [Complete API Documentation](#)
 - [API Usage Examples](#)
 
 ---
 
-We hope this documentation helps you integrate and use our RESTful API effectively. If you have any questions or need additional assistance, please do not hesitate to contact us.
+This documentation helps you integrate and use our RESTful API effectively. If you have questions or need assistance, contact our support team.
 
 Happy integrating!
